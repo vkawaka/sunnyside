@@ -68,6 +68,7 @@ header .arrow-down{
     padding: 80px 0px;
     place-items: center;
     height: 500px;
+    margin: 0px 16px;
 }
 .description__title{
     font-family: var(--title-font);
@@ -101,4 +102,101 @@ header .arrow-down{
 }
 .line-yellow{
     background-color: var(--yellow);
+}
+.line-red{
+    background-color: var(--red);
+}
+.container{
+    height: 600px;
+    background-color: tomato;
+    background-size: cover;
+}
+.container.graphic{
+    background-image: url(./images/mobile/image-graphic-design.jpg);
+}
+.container.graphic *{
+    color: var(--graphic-text);
+}
+
+.container.photography{
+    background-image: url(./images/mobile/image-photography.jpg);
+}
+.container.photography *{
+    color: var(--photography-text);
+}
+
+.container .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 24px;
+    height: 100%;
+    padding-bottom: 48px;
+}
+.container .description__title{
+    font-size: 1.5rem;
+}
+.container .description__text{
+    font-size: 1rem;
+}
+.testimonials{
+    text-align: center;
+}
+.testimonials__title{
+    font-family: var(--title-font);
+    font-size: 1.1rem;
+    letter-spacing: .2rem;
+    color: var(--gray);
+    padding: 32px 0;
+}
+.client{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    height: 400px;
+}
+.client__avatar{
+    width: 72px;
+    height: 72px;
+    background-color: tomato;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+.client__avatar.client1{
+    background-image: url(./images/image-emily.jpg);
+}
+.client__text{
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 2rem;
+    opacity: .6;
+}
+
+.client__name{
+    font-family: var(--title-font);
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.client__job{
+    color: var(--gray);
+    font-weight: 600;
+    padding: 12px;
+}
+.client__avatar.client2{
+    background-image: url(./images/image-thomas.jpg);
+}
+.client__avatar.client3{
+    background-image: url(./images/image-jennie.jpg);
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+}
+.gallery img{
+    width: 100%;
 }
