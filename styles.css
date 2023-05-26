@@ -20,7 +20,8 @@ li, ul, ol{
     --white: #ffffff;
     --graphic-text: #25564b;
     --photography-text: #19536b;
-    --footer: #458c7e;
+    --footer: #A4C9BB;
+    --footer-text: #458c7e;
     --background: #FFFBFB;
 }
 
@@ -199,4 +200,22 @@ header .arrow-down{
 }
 .gallery img{
     width: 100%;
+}
+footer{
+    background-color: var(--footer);
+    height: 400px;
+}
+.upper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    color: var(--footer-text);
+}
+.title__footer{
+    font-family: var(--title-font);
+    font-size: 2.5rem;
+    font-weight: 700;
+   
+
 }
