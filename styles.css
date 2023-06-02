@@ -227,3 +227,62 @@ footer>ul{
     display: flex;
     justify-content: space-evenly;
 }
+#btn-hamburguer{
+    padding: 1rem;
+    border: none;
+    background: none;
+}
+#mobile-menu{
+    display: none;
+}
+@media(min-width: 1024px){
+    #btn-hamburguer{
+        display: none;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+    header{
+        height: 100vh;
+        background-image: url(./images/desktop/image-header.jpg);
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: var(--white);
+        padding: 32px 16px;
+        display: grid;
+        align-items: center;
+    } 
+    #mobile-menu{
+        width: 32vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-weight: 600;
+    }
+    #contact{
+        border: none;
+        background-color: var(--white);
+        width: 100px;
+        height: 40px;
+        border-radius: 48%;
+        font-family: var(--title-font);
+        font-weight: 600;
+    }
+    header .logo{
+        font-size: 2rem;
+        font-weight: 900;
+    }
+    .info{
+        display: grid;
+    }
+    .info .egg-info{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+    .egg-info img{
+        width: 50vw;
+    }
+}
